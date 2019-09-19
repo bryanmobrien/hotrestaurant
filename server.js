@@ -81,8 +81,10 @@ app.get('/api/waitinglist', function(req, res) {
 });
 
 app.post('/api/clear', function(req, res) {
-	tables = [];
-	waitinglist = [];
+  tables = [];
+  console.log(tables);
+  waitinglist = [];
+  console.log(waitinglist);
 });
 
 // Starts the server to begin listening
