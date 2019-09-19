@@ -17,7 +17,6 @@ app.use(express.json());
 let tables = [];
 let waitinglist = [];
 
-
 // Routes
 // =============================================================
 

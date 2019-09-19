@@ -3,6 +3,9 @@ Original Heroku Link:  https://hot-restaurant-fsf.herokuapp.com/
 
 Our Team Heroku Link:  https://peaceful-crag-57651.herokuapp.com/
 
+https://whispering-forest-60512.herokuapp.com/
+https://git.heroku.com/whispering-forest-60512.git
+
 * Description: Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
 
 ![Hot Restaurant Image](Images/HotRestaurant.png)
