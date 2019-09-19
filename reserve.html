@@ -73,23 +73,25 @@
   // Question: What does this code do?
   document.getElementById("submit").addEventListener("click", function(event) {
     event.preventDefault();
-    var newCharacter = {
+    console.log('Submit clicked');
+    let newReservation = {
       name: document.getElementById("name").value.trim(),
       phone: document.getElementById("phone").value.trim(),
       email: document.getElementById("email").value.trim(),
       unique: document.getElementById("unique").value.trim()
     };
-    console.log(newCharacter);
+    console.log(newReservation);
+
     // Question: What does this code do??
-    fetch("/reserve", {
+    fetch("/api/tables", {
       method: "POST",
-      body: JSON.stringify(newCharacter),
+      body: JSON.stringify(newReservation),
       headers: { "Content-Type": "application/json" },
     })
       .then((res) => res.json())
       .then(function(data) {
-        console.log("add.html", data);
-        alert("Adding character...");
+        console.log("reserve.html", data);
+        alert("Adding reservation...");
       });
   });
 </script>
